@@ -1,0 +1,6 @@
+<svg class="sarahSvg" xmlns="http://www.w3.org/2000/svg" viewBox="100 0 300 400">
+    <g class="view">
+        <path class="spin" fill="#f7f7f7" d="M0 0h419.64v236.72H0z" /><text class="elvi" transform="translate(131.09 143.13)" font-size="84.75" fill="#171717" font-family="Roboto-Thin, Roboto" font-weight="200">E<tspan x="48.25" y="0" letter-spacing="-.09em">L</tspan>
+            <tspan x="84.75" y="0">VI</tspan>
+        </text><text class="elvi" transform="translate(184.61 230.94)" font-size="21.33" fill="#171717" font-family="Roboto-Regular, Roboto">VIEW</text></g>
+</svg>
