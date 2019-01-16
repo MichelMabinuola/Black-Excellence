@@ -67,11 +67,14 @@
         height: 100%;
         width: 100px;
         padding-top: 0;
+      
+        
     }
 
     .next a,
     .prev a {
         font-size: 16px;
+       
     }
 
 
@@ -96,15 +99,33 @@
 }
 
 @media screen and (max-width: 664px) {
-    #black-ex {
-        height: 15vh;
+     .next,
+    .prev {
+        
+        background-color: red;
+        
     }
+
+    .next a,
+    .prev a {
+        color: #fff;
+    }
+    #black-ex {
+        width: 180px;
+        height: 150px;
+
+    }
+    .center {
+    width: 80%;
+    height: 20%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
 
     .commonAttrSvg {
         width: 300px;
         height: 140px;
-        top: 50%;
-        left: 120px;
         text-align: center;
         padding-left: 50px;
     }
@@ -118,8 +139,6 @@
     .pictures:nth-child(1) {
         width: 100%;
     }
-
-
 
     .container-grid {
         padding: 120px;
@@ -147,9 +166,15 @@
 }
 
 @media screen and (max-width: 571px) {
+     .center {
+         top: 30%;
+    left: 5%;
+}
+    #black-ex {
+        width: 150px;
+        height: 140px;
 
-
-
+    }
 
     .container-grid {
         padding: 70px;
@@ -175,27 +200,27 @@
 
 
 
-
 @media only screen and (max-width: 320px) and (max-height: 568px) {
 
-    .commonAttrSvg {
-        padding-left: 1px;
-        top: 25%;
-        left: 90px;
+   .commonAttrSvg {
+        padding-right: 14px;
 
     }
-
-    .next,
-    .prev {
-        height: 70%;
-        width: 60px;
-        padding-top: 0;
+    .bottom {
+        bottom: 0.4vh;
     }
 
     .next a,
     .prev a {
+        padding-top: 0;
         font-size: 14px;
-        padding-bottom: 10px;
+    }
+     .next,
+    .prev {
+        height: 100%;
+        width: 60px;
+        padding-bottom: 12px;
+     
     }
 
 
@@ -204,34 +229,29 @@
 
 @media screen and (max-width: 473px) {
 
-    .commonAttrSvg {
-        padding-left: 1px;
-        padding-right: 38px;
-        width: 200px;
-    }
-
-    #black-ex {
-        height: 10vh;
-    }
-
 
     .container-grid {
         padding: 20px;
     }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
     .commonAttrSvg {
 
         width: 250px;
+    }
+    
+    #black-ex {
+        width: 30vw;
+        height: 13vh;
+
     }
 }
 
 @media screen and (max-width: 375px) {
 
     .commonAttrSvg {
-        width: 200px;
-        padding-left: 1px;
+        padding-left: 10px;
 
     }
 
@@ -265,10 +285,3 @@
     }
 }
 
-@media only screen and (max-width: 360px) and (max-height: 640px) {
-    .commonAttrSvg {
-        padding-left: 20px;
-        left: 100px;
-        width: 200px;
-    }
-}
