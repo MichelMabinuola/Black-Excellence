@@ -13,8 +13,18 @@ $(document).ready(() => {
         $thumbnails = $('.container-grid'),
         $fadeIn = $('.fadeIn'),
         $home = $('.home');
+    
+    
+    /*****************************IMAGE APPEND ********************************/
+    
+  
+    
+    
+    
 
     /*********************************MENU BUTTON *****************************************/
+    
+    
     let tl = new TimelineMax({
         paused: true
     });
@@ -133,9 +143,11 @@ $(document).ready(() => {
 
     }
 
+    
     $prev.hover(() => {
         TweenMax.set($('#imgTopMove'), {
-            opacity: 1
+            opacity: 1,
+            display: 'block'
         })
         TweenMax.set($('#backImg'), {
             x: -150
@@ -146,17 +158,28 @@ $(document).ready(() => {
         TweenMax.from($('#imgTopMove'), 0.5, {
             opacity: 0
         })
+        
     }, () => {
-        TweenMax.to($('#imgTopMove'), 0.3, {
-            opacity: 0
+        
+        TweenMax.set($('#imgTopMove'), {
+            opacity: 0,
+            display: 'none'
         })
+        
+        TweenMax.from($('#imgTopMove'), 0.3,  {
+            opacity: 1,
+            display: 'block'
+        })
+        
         TweenMax.to($('#backImg'), 0.3, {
             x: 0
         })
     });
+    
     $next.hover(() => {
         TweenMax.set($('#imgBottomMove'), {
-            opacity: 1
+            opacity: 1,
+            display: 'block'
         })
         TweenMax.set($('#backImg2'), {
             x: 150
@@ -167,14 +190,25 @@ $(document).ready(() => {
         TweenMax.from($('#imgBottomMove'), 0.5, {
             opacity: 0
         })
+        
 
     }, () => {
-        TweenMax.to($('#imgBottomMove'), 0.3, {
-            opacity: 0
+        
+        TweenMax.set($('#imgBottomMove'), {
+            opacity: 0,
+            display: 'none'
         })
+        
+        TweenMax.from($('#imgBottomMove'), 0.5,{
+            opacity: 1,
+            display: 'block'
+        })
+        
+        
         TweenMax.to($('#backImg2'), 0.3, {
             x: 0
         })
+        
     }) //END OF HOVER ELEMENTS
 
 
